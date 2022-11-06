@@ -1,0 +1,35 @@
+.container{
+	display: flex;
+	flex-direction: row;
+}
+.language_selection{
+	flex: 1 200px;
+}
+div .menu{
+	flex: 1;
+}
+.sweet_button{
+	background-color: blueviolet;
+	color: white;
+	border: none;
+}
+.picture{
+	position: absolute;
+	width: 100%;
+}
+
+p .menu{
+	vertical-align: middle;
+	text-align: center;
+}
+.center_text{
+	align-items: center;
+	flex: 1;
+	text-align: center;
+	vertical-align: middle;
+	align-items: center;
+}
+.icons{
+	position: relative;
+	display: block;
+}
