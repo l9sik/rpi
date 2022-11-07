@@ -8,26 +8,49 @@
 div .menu{
 	flex: 1;
 }
+p.selected{
+	text-decoration: underline;
+}
+p.language{
+	margin: 5px;
+	font-style: italic;
+}
+p.dived::after{
+	content: "/";
+}
+
+.red{
+	color: red;
+}
 .sweet_button{
 	background-color: blueviolet;
 	color: white;
 	border: none;
 }
 .picture{
-	position: absolute;
+	height: 400px;
 	width: 100%;
 }
-
-p .menu{
+figure.picture{
+	background-image: url("../resources/main-screen-background.png");
+}
+.absolute{
+	position: absolute;
+}
+p.menu{
 	vertical-align: middle;
 	text-align: center;
 }
 .center_text{
-	align-items: center;
 	flex: 1;
+	align-items: center;
 	text-align: center;
 	vertical-align: middle;
 	align-items: center;
+}
+div.icons{
+	position: absolute; 
+	right: 15px;
 }
 .icons{
 	position: relative;
