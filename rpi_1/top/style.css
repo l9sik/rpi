@@ -2,6 +2,9 @@ body {
 	font-family: 'Titillium Web';
 	font-size: 22px;
 }
+p i {
+	color: inherit;
+}
 i{
 	color: rgb(112, 119, 134);
 }
@@ -75,6 +78,8 @@ button:hover{
 	cursor: pointer;
 }
 div p.login_button{
+	position: relative;
+	top: -10px;
 	width: 60px;
 	color: rgb(117, 44, 139);
 }
@@ -132,7 +137,7 @@ button.sweet_button_shadow{
 }
 div.picture{
 	width: 100%;
-	height: 450px;
+	height: 40vw;
 	z-index: -1;
 }
 img.picture{
@@ -180,7 +185,7 @@ div.icons{
 	column-gap: 2%;
 }
 .box{
-	border-color: rgb(131, 133, 138);
+	border-color: rgb(181, 182, 184);
 	border-width: 2px;
 }
 .swiss_box{
