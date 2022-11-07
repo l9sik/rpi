@@ -6,50 +6,110 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
 </head>
 <body>
 	<!-- Menu -->
-	<div class="container">
+	<div class="container menu_container">
 		<div class="language_selection">
-			<p>neutron<span class="red">Mail</span></p>
+			<p class="bold gray" style="font-size: 30px; margin-bottom: 10px;" >neutron<span class="purple">Mail</span></p>
 			<div class="container">
-				<p class="language selected dived">English</p>
-				<p class="language dived">French</p>
-				<p class="language dived">Italian</p>
+				<p class="language selected">English</p><span class="dived"></span>
+				<p class="language">French</p><span class="dived"></span>
+				<p class="language">Italian</p><span class="dived"></span>
 				<p class="language">Polish</p>
 			</div>
 		</div>
 		<div class="menu container">
-			<p class="menu">About</p>
-			<p class="menu">Security</p>
-			<p class="menu">Blog</p>
-			<p class="menu">Careers</p>
-			<p class="menu">Support</p>
-			<p class="menu">Donate</p>
-			<button class="menu">Log In</button>
-			<button class="sweet_button">Sign Up</button>
+			<p class="menu"><a href="#">About</a></p>
+			<p class="menu"><a href="#">Security</a></p>
+			<p class="menu"><a href="#">Blog</a></p>
+			<p class="menu"><a href="#">Careers</a></p>
+			<p class="menu"><a href="#">Support</a></p>
+			<p class="menu" style="margin-right: 100px;"><a href="#">Donate</a></p>
+			<div>
+				<p class="login_button"><a href="#">Log in</a></p>
+			</div>
+			<div>
+				<button class="purple_button_menu sweet_button sweet_button_shadow">Sign Up</button>
+			</div>
 		</div>
 	</div>
 	<!-- Picture -->
 	<div class="picture">
-		<figure class="picture">
+		<img src="../resources/main-screen-background.png" class="absolute picture">
 		<div class="container">
-			<div class="center_text">
-				<p class="menu">Secure Email Communication</p>
-				<p class="menu">Base in <span class="red">Somewere</span></p>
+			<div class="center_text center_container">
+				<p class="gray bold" style="font-size: 40px; margin-top: 20px;margin-bottom: 0px;">Secure Email Communication</p>
+				<p class="gray bold" style="font-size: 30; margin-top: 0px;margin-bottom: 60px;">Based in <span class="red">Somewhere</span></p>
 				<div>
-					<button class="sweet_button">Create account</button>
-					<button class="sweet_button"><i>appleIcon</i></button>
-					<button class="sweet_button"><i>GPlayIcon</i></button>
+					<figure class="center_gradient"></figure>
+					<button class="sweet_button sweet_button_shadow purple_button_center">Create account</button>
+					<button class="sweet_button purple_button"><i>appleIcon</i></button>
+					<button class="sweet_button purple_button"><i>GPlayIcon</i></button>
 				</div>
 			</div>
-			<div class="icons">
+			<div class="icons center_container">
 				<i class="icons">icon1</i>
 				<i class="icons">icon2</i>
 				<i class="icons">icon3</i>
 			</div>
 		</div>
-		</figure>
+	</div>
+	<!--Forts-->
+	<div class="grid_wrapper">
+		<div class="empty_box"></div>
+		<div class="swiss_box"></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div>
+			<div class="container swiss_box">
+				<div>icon</div>
+				<div>
+					<p>Swiss Privacy</p>
+					<p>Data Security and Neutrality</p>
+				</div>
+			</div>
+			<div>
+				<p>NeutronMail is incorporated in Somewhere and all 
+					our servers are located in Switzerland. This means 
+					all user data is protected by strict Swiss privacy laws.</p>
+			</div>
+		</div>
+		<div class="encryption_box">
+			<div class="container">
+				<div>icon</div>
+				<div>
+					<p>Double Encryption</p>
+					<p>Automatic Email Security</p>
+				</div>
+			</div>
+			<div>
+				<p>All emails are secured automatically with end-to-end 
+					encryption. This means even we cannot decrypt and read 
+					your emails. As result, your ecrypted emails cannot 
+					be shared with third parties.</p>
+			</div>
+		</div>
+		<div>
+			<div class="container">
+				<div>icon</div>
+				<div>
+					<p>Anonymous Email</p>
+					<p>Protect Your Privacy</p>
+				</div>
+			</div>
+			<div>
+				<p>No personal information is required to create your 
+					secure email account. By default, we do not keep any 
+					IP logs which can be linked to your anonymous email 
+					account. Your privacy comes first.</p>
+			</div>
+		</div>
+		<div class="anon_email_box"></div>
+		<div class="physical_security_box"></div>
 	</div>
 </body>
 </html>

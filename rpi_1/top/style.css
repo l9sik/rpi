@@ -1,38 +1,135 @@
+body {
+	font-family: 'Titillium Web';
+	font-size: 22px;
+}
+a{
+	color: rgb(112, 119, 134);
+}
+a:active{
+	color:rgb(112, 119, 134);
+}
+a:visited{
+	color: rgb(112, 119, 134);
+}
 .container{
 	display: flex;
 	flex-direction: row;
 }
+.menu_container{
+	margin: 30px 5% 0 15%;
+}
 .language_selection{
-	flex: 1 200px;
+	flex: 1 -10px;
+}
+.bold{
+	font-weight: 900;
 }
 div .menu{
 	flex: 1;
+	font-size: 12px;
 }
 p.selected{
 	text-decoration: underline;
+	font-weight: bold;
+}
+div p.language{
+	text-align: center;
+	vertical-align:middle;
 }
 p.language{
-	margin: 5px;
-	font-style: italic;
-}
-p.dived::after{
-	content: "/";
+	margin: 0px;
+	font-size: 16px;
 }
 
+.dived{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.dived::before{
+	content: "/";
+}
 .red{
 	color: red;
 }
+.gray{
+	color:rgb(112, 119, 134)
+}
+.purple{
+	color: rgb(109, 57, 125);;
+}
+button{
+	transition-duration: 0.4s;
+}
+button:hover{
+	cursor: pointer;
+}
+div p.login_button{
+	width: 60px;
+	margin-left: 10%;
+	color: rgb(117, 44, 139);
+}
+p.login_button a {
+	color: rgb(117, 44, 139);
+	text-decoration: none;
+}
+p.login_button{
+	font-size: 16px;
+	font-weight: 600;
+}
+p.login_button::before{
+	content: "i";
+}
 .sweet_button{
-	background-color: blueviolet;
+	background-color: white;
 	color: white;
+	border-radius: 20px;
 	border: none;
+	height: 40px;
+	transition-duration: 0.4s;
+	font-weight:600;
 }
-.picture{
-	height: 400px;
+.purple_button_center{
+	width: 200px;
+	background: rgb(120,161,193);
+	background: linear-gradient(90deg, rgba(120,161,193,1) 0%, rgba(95,2,124,1) 100%);
+}
+.purple_button_center:hover{
+	background: rgb(120,201,218);
+	background: linear-gradient(90deg, rgba(120,201,218,1) 26%, rgba(79,123,191,1) 100%);
+	width: 210px;
+}
+div button.purple_button_menu{
+	width: 60px;
+	margin: 0;
+}
+.purple_button_menu{
+	font-size: 12px;
+	width: 60px;
+	height: 35px;
+	background: rgb(26,162,209);
+	background: linear-gradient(315deg, rgba(26,162,209,1) 0%, rgba(91,35,155,1) 80%);
+}
+.purple_button{
+	width: 40px;
+	background-color: rgb(109, 57, 125);
+}
+.purple_button:hover{
+	background-color: rgb(26,162,209); 
+	width: 50px;
+}
+button.sweet_button_shadow{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+div.picture{
 	width: 100%;
+	height: 450px;
+	z-index: -1;
 }
-figure.picture{
-	background-image: url("../resources/main-screen-background.png");
+img.picture{
+	object-fit: cover;
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 .absolute{
 	position: absolute;
@@ -40,13 +137,27 @@ figure.picture{
 p.menu{
 	vertical-align: middle;
 	text-align: center;
+	color: rgb(112, 119, 134);
+	margin-left: 3%;
 }
 .center_text{
 	flex: 1;
 	align-items: center;
 	text-align: center;
 	vertical-align: middle;
-	align-items: center;
+	z-index: 1000;
+}
+.center_container{
+	margin-top: 20vh;
+}
+.center_gradient{
+	position: absolute;
+	left: calc(50vw - 300px);
+	background: rgb(63, 119, 251);
+	background: radial-gradient(at 50% -40%, rgba(63, 119, 251,1) 0%, rgba(252,70,107,0) 70%);
+	width: 500px;
+	height: 50px;
+	z-index: -1;
 }
 div.icons{
 	position: absolute; 
@@ -56,3 +167,34 @@ div.icons{
 	position: relative;
 	display: block;
 }
+.grid_wrapper{
+	z-index: 10;
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 1fr 10%;
+	width: 90%;
+	column-gap: 5%;
+}
+.swiss_box{
+	border-right-style: solid;
+	border-color: black;
+}
+.encryption_box{
+	border-right-style: solid;
+	border-color: black;
+}
+.anon_email_box{
+	border-top-style: solid;
+	border-color: black;
+}
+.empty_box{
+	height: 100px;
+}
+.physical_security_box{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	border-right: solid;
+	border-bottom: solid; 
+	border-color: black;
+	height: 200px;
+}
+
