@@ -63,11 +63,11 @@ select {
   font: inherit;
 }
 
-body{
+body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
@@ -76,10 +76,12 @@ button:hover{
   height: 173px;
   border: solid #b9b9b9;
   border-width: 0 2px 2px 0;
+
   .physical-security {
     margin-left: 500px;
     width: 613px;
     text-align: right;
+
     h1 {
       font-weight: 200;
       color: #535353;
@@ -99,7 +101,8 @@ button:hover{
       color: #f75d5d;
     }
   }
-  .learn-more{
+
+  .learn-more {
     margin-top: 25px;
     margin-left: 1146px - 335px/2;
     height: 65px;
@@ -110,13 +113,14 @@ button:hover{
     font-size: 1rem;
     color: #676767;
   }
-  .learn-more:hover{
-    background: linear-gradient(315deg, rgba(26,162,209,1) 0%, rgba(91,35,155,1) 80%);
+
+  .learn-more:hover {
+    background: linear-gradient(315deg, rgba(26, 162, 209, 1) 0%, rgba(91, 35, 155, 1) 80%);
     color: #ffffff;
   }
 }
 
-.reviewers-pics{
+.reviewers-pics {
   margin-top: 70px;
 }
 
@@ -124,6 +128,7 @@ button:hover{
   background: url("../resources/additional-advantage.png") no-repeat 956px 0;
   height: 665px;
   margin-top: 67px;
+
   .slider-quotes {
     display: grid;
     grid-template-columns: 54px 515px;
@@ -157,6 +162,10 @@ button:hover{
       border: 2px solid white;
     }
 
+    .slide2, .slide3{
+      display: none;
+    }
+
     p {
       font-size: 24px;
 
@@ -167,24 +176,27 @@ button:hover{
     }
   }
 
-  .description-app-text{
+  .description-app-text {
     margin-left: 640px;
     margin-top: 95px;
     width: 465px;
     text-align: right;
-    h1{
+
+    h1 {
       font-size: 36px;
       color: #535353;
     }
-    p{
+
+    p {
       font-size: 16px;
       color: #959393;
     }
   }
 
-  .app-links{
+  .app-links {
     margin-top: 35px;
     margin-left: 734px;
+
     img {
       display: inline-block;
       margin-left: 15px;
@@ -192,7 +204,7 @@ button:hover{
     }
   }
 
-  .line-bottom{
+  .line-bottom {
     border-bottom: 1.5px solid #b9b9b9;
     width: 1400px;
     position: relative;
@@ -203,18 +215,55 @@ button:hover{
   }
 }
 
-.upgrade-donate{
-  button{
+.upgrade-donate {
+  margin-top: 50px;
+  text-align: center;
+  line-height: 40px;
+
+  h1 {
+    color: #535353;
+    font-size: 36px;
+  }
+
+  p {
+    color: #969696;
+    font-size: 29px;
+  }
+
+  button {
+    display: inline-block;
+    height: 60px;
+    border: none;
     border-radius: 50px;
     color: white;
+    margin-top: 20px;
   }
-    .upgrade-btn {
-      width: 250px;
-      background: linear-gradient(90deg, rgba(120, 161, 193, 1) 0%, rgba(95, 2, 124, 1) 100%);
-    }
 
-    .donate-btn {
-      width: 170px;
-      background: linear-gradient(90deg, rgba(120, 201, 218, 1) 26%, rgba(79, 123, 191, 1) 100%);
-    }
+  i {
+    padding-right: 10px;
+  }
+
+  button {
+    transition-duration: 0.4s;
+  }
+
+  .upgrade-btn {
+    box-shadow: 0 10px 20px #6b76a6;
+    width: 250px;
+    background: linear-gradient(90deg, rgba(120, 161, 193, 1) 0%, rgba(95, 2, 124, 1) 100%);
+  }
+
+  .upgrade-btn:hover {
+    width: 280px;
+  }
+
+  .donate-btn {
+    box-shadow: 0 10px 20px #58acaf;
+    margin-left: 30px;
+    width: 170px;
+    background: linear-gradient(90deg, rgba(120, 201, 218, 1) 26%, rgba(79, 123, 191, 1) 100%);
+  }
+  .donate-btn:hover {
+    width: 200px;
+  }
 }
