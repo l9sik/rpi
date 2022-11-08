@@ -155,6 +155,9 @@ button:hover {
   visibility: visible;
   border: 2px solid white;
 }
+.our-app .slider-quotes .slide2, .our-app .slider-quotes .slide3 {
+  display: none;
+}
 .our-app .slider-quotes p {
   font-size: 24px;
 }
@@ -194,17 +197,49 @@ button:hover {
   z-index: -1;
 }
 
+.upgrade-donate {
+  margin-top: 50px;
+  text-align: center;
+  line-height: 40px;
+}
+.upgrade-donate h1 {
+  color: #535353;
+  font-size: 36px;
+}
+.upgrade-donate p {
+  color: #969696;
+  font-size: 29px;
+}
 .upgrade-donate button {
+  display: inline-block;
+  height: 60px;
+  border: none;
   border-radius: 50px;
   color: white;
+  margin-top: 20px;
+}
+.upgrade-donate i {
+  padding-right: 10px;
+}
+.upgrade-donate button {
+  transition-duration: 0.4s;
 }
 .upgrade-donate .upgrade-btn {
+  box-shadow: 0 10px 20px #6b76a6;
   width: 250px;
   background: linear-gradient(90deg, rgb(120, 161, 193) 0%, rgb(95, 2, 124) 100%);
 }
+.upgrade-donate .upgrade-btn:hover {
+  width: 280px;
+}
 .upgrade-donate .donate-btn {
+  box-shadow: 0 10px 20px #58acaf;
+  margin-left: 30px;
   width: 170px;
   background: linear-gradient(90deg, rgb(120, 201, 218) 26%, rgb(79, 123, 191) 100%);
+}
+.upgrade-donate .donate-btn:hover {
+  width: 200px;
 }
 
 /*# sourceMappingURL=index.css.map */
