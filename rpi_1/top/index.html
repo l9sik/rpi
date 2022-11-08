@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
-	<link href="../mid/index.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+	<link rel="stylesheet" href="../mid/index.scss">
+	<link href="../mid/index.css" rel="stylesheet">	<link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
 	<script src="https://kit.fontawesome.com/e16835ac74.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,30 +22,30 @@
 				<p class="language">Polish</p>
 			</div>
 		</div>
-		<div style="width: 20%;"></div>
-		<div class="container" style="width: 50%; flex: 0;">
+		<div style="width: 18%;"></div>
+		<div class="container" style="width: 50%;">
 			<div>
-				<p class="menu"><a href="#">About</a></p>
+				<p class="menu bold"><a href="#">About</a></p>
 			</div>
-			<div><p class="menu"><a href="#">Security</a></p>
-			</div>
-			<div>
-				<p class="menu"><a href="#">Blog</a></p>
+			<div><p class="menu bold"><a href="#">Security</a></p>
 			</div>
 			<div>
-				<p class="menu"><a href="#">Careers</a></p>
+				<p class="menu bold"><a href="#">Blog</a></p>
 			</div>
 			<div>
-				<p class="menu"><a href="#">Support</a></p>
+				<p class="menu bold"><a href="#">Careers</a></p>
 			</div>
 			<div>
-				<p class="menu" style="margin-right: 80px;"><a href="#">Donate</a></p>
+				<p class="menu bold"><a href="#">Support</a></p>
+			</div>
+			<div>
+				<p class="menu bold" style="margin-right: 80px;"><a href="#">Donate</a></p>
 			</div>
 			<div>
 				<p class="login_button"><i class="fa-solid fa-right-to-bracket" style="position: relative; left: -20px;"></i><a href="#">Log in</a></p>
 			</div>
 			<div style="margin-left: 15px;">
-				<button class="purple_button_menu sweet_button sweet_button_shadow" style="font-weight:100;">Sign Up</button>
+				<button class="purple_button_menu sweet_button sweet_button_shadow" style="font-weight:100;">Sign up</button>
 			</div>
 		</div>
 	</div>
@@ -54,24 +54,24 @@
 		<img src="../resources/main-screen-background.png" class="absolute picture">
 		<div class="container">
 			<div class="center_text center_container">
-				<p class="gray bold" style="font-size: 40px; margin-top: 20px;margin-bottom: 0px;">Secure Email Communication</p>
+				<p class="gray bold" style="font-size: 50px; margin-top: 20px;margin-bottom: 0px;">Secure Email Communication</p>
 				<p class="gray bold" style="font-size: 30px; margin-top: 0px;margin-bottom: 60px;">Based in <span class="red">Somewhere</span></p>
 				<div>
 					<figure class="center_gradient"></figure>
 					<button class="sweet_button sweet_button_shadow purple_button_center">Create account</button>
-					<button class="sweet_button purple_button"><i class="fa-brands fa-apple" style="color: inherit; font-size: 18px;"></i></button>
-					<button class="sweet_button purple_button"><i class="fa-brands fa-google-play" style="color: inherit; font-size: 16px;"></i></button>
+					<button class="sweet_button purple_button"><i class="fa-brands fa-apple" style="color: inherit; font-size: 18px; position: relative; top: -1px;"></i></button>
+					<button class="sweet_button purple_button"><i class="fa-brands fa-google-play" style="color: inherit; font-size: 16	px;"></i></button>
 				</div>
 			</div>
 			<div class="icons center_container">
 				<div>
-					<i class="fa-brands fa-square-google-plus"></i>
+					<a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
 				</div>
 				<div>
-					<i class="fa-brands fa-square-facebook"></i>
+					<a href="#"><i class="fa-brands fa-square-facebook"></i></a>
 				</div>
 				<div>
-					<i class="fa-brands fa-square-twitter"></i>
+					<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
 				</div>
 			</div>
 		</div>
@@ -85,7 +85,7 @@
 		<div></div>
 		<div></div>
 		<div>
-			<div class="container box center_text">
+			<div class="container box swiss_box">
 				<div class="fort_image"><img src="..\resources\swiss-privasy.png" alt=""></div>
 				<div>
 					<div>
@@ -133,34 +133,7 @@
 			</div>
 		</div>
 		<div class="box anon_email_box"></div>
-		<div class="security-features" style="border-color: rgb(181, 182, 184)">
-			<div class="physical-security">
-				<h1>Physical Security</h1>
-				<p>NeutronMail's infrastructure resides in Europe's <span>most secure</span> <br>
-					datacenter, underneath 1000 meters of solid rock</p>
-			</div>
-			<button class="learn-more">Learn more about our security features</button>
-		</div>
-	</div>
-
-	<div class="reviewers-pics">
-		<img src="../resources/review-row.png">
-	</div>
-	<div class="our-app">
-		<div class="slider-quotes">
-			<div class="slider-radio">
-				<input type='radio' class="carousel-1" name="slider"><br>
-				<input type='radio' class="carousel-2" name="slider"><br>
-				<input type='radio' class="carousel-3" name="slider"><br>
-			</div>
-			<p>A new email service being developed by a group from MIT and CERN promises to bring secure,
-				encrypted email to the masses and keep sensitive information away from prying eyes.<br>
-				<span>— Boston Herald</span></p>
-		</div>
-		<div class="description-app-text">
-			<h1>Any device, anywhere</h1>
-			The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is optimized to help you better read, organize, and send email.</p>
-		</div>
+		<div class="box physical_security_box" style="border-color: rgb(210, 210, 211)"></div>
 	</div>
 </body>
 </html>
