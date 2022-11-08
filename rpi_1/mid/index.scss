@@ -1,0 +1,220 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.security-features {
+  width: 1146px;
+  height: 173px;
+  border: solid #b9b9b9;
+  border-width: 0 2px 2px 0;
+  .physical-security {
+    margin-left: 500px;
+    width: 613px;
+    text-align: right;
+    h1 {
+      font-weight: 200;
+      color: #535353;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    p {
+      line-height: 1.3rem;
+      letter-spacing: 0.2px;
+      font-weight: 300;
+      color: #959393;
+      font-size: 1.3rem;
+    }
+
+    span {
+      color: #f75d5d;
+    }
+  }
+  .learn-more{
+    margin-top: 25px;
+    margin-left: 1146px - 335px/2;
+    height: 65px;
+    width: 335px;
+    border: 1px solid #c7c7c7;
+    border-radius: 30px;
+    background: #ffffff;
+    font-size: 1rem;
+    color: #676767;
+  }
+  .learn-more:hover{
+    background: linear-gradient(315deg, rgba(26,162,209,1) 0%, rgba(91,35,155,1) 80%);
+    color: #ffffff;
+  }
+}
+
+.reviewers-pics{
+  margin-top: 70px;
+}
+
+.our-app {
+  background: url("../resources/additional-advantage.png") no-repeat 956px 0;
+  height: 665px;
+  margin-top: 67px;
+  .slider-quotes {
+    display: grid;
+    grid-template-columns: 54px 515px;
+    padding-left: 365px;
+
+    input[type='radio']:after {
+      width: 17px;
+      height: 17px;
+      border-radius: 17px;
+      top: -4px;
+      left: -1px;
+      position: relative;
+      background-color: #d1d3d1;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid white;
+    }
+
+    input[type='radio']:checked:after {
+      width: 17px;
+      height: 17px;
+      border-radius: 17px;
+      top: -4px;
+      left: -1px;
+      position: relative;
+      background-color: #000000;
+      content: '';
+      display: inline-block;
+      visibility: visible;
+      border: 2px solid white;
+    }
+
+    p {
+      font-size: 24px;
+
+      span {
+        color: #727272;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .description-app-text{
+    margin-left: 640px;
+    margin-top: 95px;
+    width: 465px;
+    text-align: right;
+    h1{
+      font-size: 36px;
+      color: #535353;
+    }
+    p{
+      font-size: 16px;
+      color: #959393;
+    }
+  }
+
+  .app-links{
+    margin-top: 35px;
+    margin-left: 734px;
+    img {
+      display: inline-block;
+      margin-left: 15px;
+
+    }
+  }
+
+  .line-bottom{
+    border-bottom: 1.5px solid #b9b9b9;
+    width: 1400px;
+    position: relative;
+    top: 155px;
+    margin-bottom: 0;
+    float: right;
+    z-index: -1;
+  }
+}
+
+.upgrade-donate{
+  button{
+    border-radius: 50px;
+    color: white;
+  }
+    .upgrade-btn {
+      width: 250px;
+      background: linear-gradient(90deg, rgba(120, 161, 193, 1) 0%, rgba(95, 2, 124, 1) 100%);
+    }
+
+    .donate-btn {
+      width: 170px;
+      background: linear-gradient(90deg, rgba(120, 201, 218, 1) 26%, rgba(79, 123, 191, 1) 100%);
+    }
+}
