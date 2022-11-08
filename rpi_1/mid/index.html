@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
-	<link href="index.css" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/e16835ac74.js" crossorigin="anonymous"></script>
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e16835ac74.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>Document</title>
 </head>
 <body>
-	<div class="security-features">
-		<div class="physical-security">
-			<h1>Physical Security</h1>
-			<p>NeutronMail's infrastructure resides in Europe's <span>most secure</span> <br>
-				datacenter, underneath 1000 meters of solid rock</p>
-		</div>
-		<button class="learn-more">Learn more about our security features</button>
-	</div>
-	<div class="reviewers-pics">
-		<img src="../resources/review-row.png">
-	</div>
-	<div class="our-app">
-		<div class="slider-quotes">
-			<div class="slider-radio">
-				<input type='radio' class="carousel-1" name="slider"><br>
-				<input type='radio' class="carousel-2" name="slider"><br>
-				<input type='radio' class="carousel-3" name="slider"><br>
-			</div>
-			<p class="slide1">A new email service being developed by a group from MIT and CERN promises to bring secure,
-				encrypted email to the masses and keep sensitive information away from prying eyes.<br>
-				<span>— Boston Herald</span></p>
-			<p class="slide2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda facere nam nesciunt nihil perferendis provident quam quidem repudiandae temporibus ut!</p>
-			<p class="slide3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nisi nobis placeat quis velit vitae.</p>
-		</div>
-		<div class="description-app-text">
-			<h1>Any device, anywhere</h1>
-			The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is optimized to help you better read, organize, and send email.</p>
-		</div>
-		<div class="app-links">
-			<img src="../resources/app-store.png">
-			<img src="../resources/google-play.png">
-		</div>
-		<div class="line-bottom"></div>
-	</div>
-	<div class="upgrade-donate">
-		<h1>Privacy is a fundamental right.</h1>
-		<p>Your support helps us to protect privacy world-wide.</p>
-		<button class="upgrade-btn"><i class="fa-solid fa-cloud-arrow-up"></i>Upgrade to Paid Plan</button>
-		<button class="donate-btn"><i class="fa-solid fa-dollar-sign"></i>Donate</button>
-	</div>
+<div class="security-features">
+    <div class="physical-security">
+        <h1>Physical Security</h1>
+        <p>NeutronMail's infrastructure resides in Europe's <span>most secure</span> <br>
+            datacenter, underneath 1000 meters of solid rock</p>
+    </div>
+    <button class="learn-more">Learn more about our security features</button>
+</div>
+<div class="reviewers-pics">
+    <img src="../resources/review-row.png">
+</div>
+<div class="our-app">
+    <div class="slider-quotes">
+        <div class="slider-radio">
+            <input type='radio' id="carousel-1" name="slider" checked="checked"
+                   onchange="changeSlide('slide1', ['slide2', 'slide3'])"><br>
+            <input type='radio' id="carousel-2" name="slider"
+                   onchange="changeSlide('slide2', ['slide1', 'slide3'])"><br>
+            <input type='radio' id="carousel-3" name="slider"
+                   onchange="changeSlide('slide3', ['slide2', 'slide1'])"><br>
+        </div>
+        <div id="slide1">
+            <p>A new email service being developed by a group from MIT and CERN promises to bring secure,
+                encrypted email to the masses and keep sensitive information away from prying eyes.<br>
+                <span>— Boston Herald</span></p>
+        </div>
+        <div id="slide2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cum dolor et, excepturi harum
+                ipsa nesciunt nobis officia pariatur vitae!</p>
+        </div>
+        <div id="slide3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At doloremque eos fugit illum ipsam modi quasi quidem quod tenetur ullam! Consequuntur dolore eaque est hic nulla provident quibusdam repellendus rerum.</p>
+        </div>
+    </div>
+    <div class="description-app-text">
+        <h1>Any device, anywhere</h1>
+        <p>The NeutronMail inbox is optimized for productivity. Each detail within our secure email service is optimized
+            to
+            help you better read, organize, and send email.</p>
+    </div>
+    <div class="app-links">
+        <img src="../resources/app-store.png">
+        <img src="../resources/google-play.png">
+    </div>
+    <div class="line-bottom"></div>
+</div>
+<div class="upgrade-donate">
+    <h1>Privacy is a fundamental right.</h1>
+    <p>Your support helps us to protect privacy world-wide.</p>
+    <button class="upgrade-btn"><i class="fa-solid fa-cloud-arrow-up"></i>Upgrade to Paid Plan</button>
+    <button class="donate-btn"><i class="fa-solid fa-dollar-sign"></i>Donate</button>
+</div>
 </body>
 </html>

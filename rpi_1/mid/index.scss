@@ -1,3 +1,4 @@
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -162,18 +163,35 @@ button:hover {
       border: 2px solid white;
     }
 
-    .slide2, .slide3{
+    #slide1, #slide2, #slide3{
+      animation: fade-in 0.5s;
+      height: 180px;
+    }
+
+    #slide2, #slide3{
       display: none;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-3vh)
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0)
+      }
     }
 
     p {
       font-size: 24px;
-
       span {
         color: #727272;
         font-size: 16px;
       }
     }
+
   }
 
   .description-app-text {

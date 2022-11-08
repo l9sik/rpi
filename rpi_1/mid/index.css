@@ -155,8 +155,22 @@ button:hover {
   visibility: visible;
   border: 2px solid white;
 }
-.our-app .slider-quotes .slide2, .our-app .slider-quotes .slide3 {
+.our-app .slider-quotes #slide1, .our-app .slider-quotes #slide2, .our-app .slider-quotes #slide3 {
+  animation: fade-in 0.5s;
+  height: 180px;
+}
+.our-app .slider-quotes #slide2, .our-app .slider-quotes #slide3 {
   display: none;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-3vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .our-app .slider-quotes p {
   font-size: 24px;
