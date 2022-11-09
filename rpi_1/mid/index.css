@@ -72,35 +72,35 @@ button:hover {
   cursor: pointer;
 }
 
-.security-features {
-  width: 1146px;
-  height: 173px;
+.physical_security_box {
+  width: 1152px;
   border: solid #b9b9b9;
-  border-width: 0 2px 2px 0;
+  border-width: 0 1px 1px 0;
 }
-.security-features .physical-security {
+.physical_security_box .physical-security {
+  padding-top: 40px;
   margin-left: 500px;
   width: 613px;
   text-align: right;
 }
-.security-features .physical-security h1 {
-  font-weight: 200;
+.physical_security_box .physical-security h1 {
+  font-weight: 400;
   color: #535353;
   font-size: 3rem;
   letter-spacing: 2px;
 }
-.security-features .physical-security p {
+.physical_security_box .physical-security p {
   line-height: 1.3rem;
   letter-spacing: 0.2px;
-  font-weight: 300;
+  font-weight: 600;
   color: #959393;
   font-size: 1.3rem;
 }
-.security-features .physical-security span {
+.physical_security_box .physical-security span {
   color: #f75d5d;
 }
-.security-features .learn-more {
-  margin-top: 25px;
+.physical_security_box .learn-more {
+  margin-top: 15px;
   margin-left: 978.5px;
   height: 65px;
   width: 335px;
@@ -110,8 +110,8 @@ button:hover {
   font-size: 1rem;
   color: #676767;
 }
-.security-features .learn-more:hover {
-  background: linear-gradient(315deg, rgb(26, 162, 209) 0%, rgb(91, 35, 155) 80%);
+.physical_security_box .learn-more:hover {
+  background: linear-gradient(90deg, rgb(120, 201, 218) 26%, rgb(79, 123, 191) 100%);
   color: #ffffff;
 }
 
@@ -133,7 +133,7 @@ button:hover {
   width: 17px;
   height: 17px;
   border-radius: 17px;
-  top: -4px;
+  top: -10px;
   left: -1px;
   position: relative;
   background-color: #d1d3d1;
@@ -146,7 +146,7 @@ button:hover {
   width: 17px;
   height: 17px;
   border-radius: 17px;
-  top: -4px;
+  top: -10px;
   left: -1px;
   position: relative;
   background-color: #000000;
@@ -174,6 +174,8 @@ button:hover {
 }
 .our-app .slider-quotes p {
   font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
 }
 .our-app .slider-quotes p span {
   color: #727272;
@@ -187,10 +189,12 @@ button:hover {
 }
 .our-app .description-app-text h1 {
   font-size: 36px;
+  font-weight: 400;
   color: #535353;
 }
 .our-app .description-app-text p {
   font-size: 16px;
+  font-weight: 400;
   color: #959393;
 }
 .our-app .app-links {
@@ -219,6 +223,7 @@ button:hover {
 .upgrade-donate h1 {
   color: #535353;
   font-size: 36px;
+  font-weight: 400;
 }
 .upgrade-donate p {
   color: #969696;
@@ -229,11 +234,14 @@ button:hover {
   height: 60px;
   border: none;
   border-radius: 50px;
+  font-weight: 600;
+  font-size: 18px;
   color: white;
   margin-top: 20px;
 }
 .upgrade-donate i {
   padding-right: 10px;
+  color: white;
 }
 .upgrade-donate button {
   transition-duration: 0.4s;
@@ -244,16 +252,18 @@ button:hover {
   background: linear-gradient(90deg, rgb(120, 161, 193) 0%, rgb(95, 2, 124) 100%);
 }
 .upgrade-donate .upgrade-btn:hover {
+  background: linear-gradient(90deg, rgb(120, 250, 208) 26%, rgb(79, 123, 191) 100%);
   width: 280px;
 }
 .upgrade-donate .donate-btn {
   box-shadow: 0 10px 20px #58acaf;
   margin-left: 30px;
   width: 170px;
-  background: linear-gradient(90deg, rgb(120, 201, 218) 26%, rgb(79, 123, 191) 100%);
+  background: linear-gradient(90deg, rgb(135, 144, 240) 26%, rgb(118, 110, 210) 100%);
 }
 .upgrade-donate .donate-btn:hover {
   width: 200px;
+  background: linear-gradient(90deg, rgb(120, 250, 208) 26%, rgb(79, 123, 191) 100%);
 }
 
 /*# sourceMappingURL=index.css.map */

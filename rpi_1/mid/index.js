@@ -1,9 +1,9 @@
 function changeSlide(slideToShow, slidesToHide){
-    document.getElementById(slideToShow).style.display = "block";
+    const slideElement = document.getElementById(slideToShow);
+    slideElement.style.display = "block";
     slidesToHide.forEach(slide => {
-        document.getElementById(slide).style.animation = "fade-in 1s";
-        document.getElementById(slide).style.display = "none";
-
-
+        let slideElement = document.getElementById(slide);
+        slideElement.style.animation = "fade-in 1s";
+        slideElement.style.display = "none";
     })
 }

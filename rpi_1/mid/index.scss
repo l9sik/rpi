@@ -72,19 +72,20 @@ button:hover {
   cursor: pointer;
 }
 
-.security-features {
-  width: 1146px;
-  height: 173px;
+.physical_security_box {
+  width: 1152px;
   border: solid #b9b9b9;
-  border-width: 0 2px 2px 0;
+  border-width: 0 1px 1px 0;
+
 
   .physical-security {
+    padding-top: 40px;
     margin-left: 500px;
     width: 613px;
     text-align: right;
 
     h1 {
-      font-weight: 200;
+      font-weight: 400;
       color: #535353;
       font-size: 3rem;
       letter-spacing: 2px;
@@ -93,7 +94,7 @@ button:hover {
     p {
       line-height: 1.3rem;
       letter-spacing: 0.2px;
-      font-weight: 300;
+      font-weight: 600;
       color: #959393;
       font-size: 1.3rem;
     }
@@ -104,7 +105,7 @@ button:hover {
   }
 
   .learn-more {
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 1146px - 335px/2;
     height: 65px;
     width: 335px;
@@ -116,7 +117,7 @@ button:hover {
   }
 
   .learn-more:hover {
-    background: linear-gradient(315deg, rgba(26, 162, 209, 1) 0%, rgba(91, 35, 155, 1) 80%);
+    background: linear-gradient(90deg, rgba(120, 201, 218, 1) 26%, rgba(79, 123, 191, 1) 100%);
     color: #ffffff;
   }
 }
@@ -139,7 +140,7 @@ button:hover {
       width: 17px;
       height: 17px;
       border-radius: 17px;
-      top: -4px;
+      top: -10px;
       left: -1px;
       position: relative;
       background-color: #d1d3d1;
@@ -153,7 +154,7 @@ button:hover {
       width: 17px;
       height: 17px;
       border-radius: 17px;
-      top: -4px;
+      top: -10px;
       left: -1px;
       position: relative;
       background-color: #000000;
@@ -186,6 +187,8 @@ button:hover {
 
     p {
       font-size: 24px;
+      font-style: italic;
+      font-weight: 600;
       span {
         color: #727272;
         font-size: 16px;
@@ -202,11 +205,13 @@ button:hover {
 
     h1 {
       font-size: 36px;
+      font-weight: 400;
       color: #535353;
     }
 
     p {
       font-size: 16px;
+      font-weight: 400;
       color: #959393;
     }
   }
@@ -241,6 +246,7 @@ button:hover {
   h1 {
     color: #535353;
     font-size: 36px;
+    font-weight: 400;
   }
 
   p {
@@ -253,12 +259,15 @@ button:hover {
     height: 60px;
     border: none;
     border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
     color: white;
     margin-top: 20px;
   }
 
   i {
     padding-right: 10px;
+    color: white;
   }
 
   button {
@@ -272,6 +281,7 @@ button:hover {
   }
 
   .upgrade-btn:hover {
+    background: linear-gradient(90deg, rgba(120, 250, 208, 1) 26%, rgba(79, 123, 191, 1) 100%);
     width: 280px;
   }
 
@@ -279,9 +289,10 @@ button:hover {
     box-shadow: 0 10px 20px #58acaf;
     margin-left: 30px;
     width: 170px;
-    background: linear-gradient(90deg, rgba(120, 201, 218, 1) 26%, rgba(79, 123, 191, 1) 100%);
+    background: linear-gradient(90deg, rgba(135, 144, 240, 1) 26%, rgba(118, 110, 210, 1) 100%);
   }
   .donate-btn:hover {
     width: 200px;
+    background: linear-gradient(90deg, rgba(120, 250, 208, 1) 26%, rgba(79, 123, 191, 1) 100%);
   }
 }
