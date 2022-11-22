@@ -1,1 +1,1 @@
-# rpi.github.io
+# https://l9sik.github.io/rpi/
