@@ -177,6 +177,7 @@ div.icons{
 	top: 25%
 }
 .icons{
+	z-index: 1100;
 	position: relative;
 	display: block;
 }
