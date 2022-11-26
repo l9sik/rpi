@@ -83,7 +83,7 @@ button:hover {
   width: 613px;
   text-align: right;
 }
-.physical_security_box .physical-security h1 {
+.physical_security_box .physical-security h2 {
   font-weight: 400;
   color: #535353;
   font-size: 3rem;
@@ -187,7 +187,7 @@ button:hover {
   width: 465px;
   text-align: right;
 }
-.our-app .description-app-text h1 {
+.our-app .description-app-text h2 {
   font-size: 36px;
   font-weight: 400;
   color: #535353;
@@ -220,7 +220,7 @@ button:hover {
   text-align: center;
   line-height: 40px;
 }
-.upgrade-donate h1 {
+.upgrade-donate h2 {
   color: #535353;
   font-size: 36px;
   font-weight: 400;
