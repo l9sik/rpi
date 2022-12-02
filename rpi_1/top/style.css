@@ -81,16 +81,15 @@ button{
 button:hover{
 	cursor: pointer;
 }
-div p.login_button{
+div a.login_button{
 	width: 60px;
 	color: rgb(117, 44, 139);
+	vertical-align: top;
 }
-p.login_button a {
-	color: rgb(117, 44, 139);
-}
-p.login_button{
+.login_button{
 	font-size: 16px;
 	font-weight: 600;
+	color: rgb(117, 44, 139);
 }
 .left_space{
 	width: 50%;
@@ -146,6 +145,7 @@ button.sweet_button_shadow{
 .login_beforeicon{
 	position: relative; 
 	left: -20px;
+	top: -5px;
 }
 .donate_left_space{
 	margin-right: 80px;
