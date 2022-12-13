@@ -34,15 +34,24 @@ a:visited{
 	font-weight: 600;
 }
 p.menu{
-	
-	vertical-align: middle;
-	color: rgb(112, 119, 134);
-}
-div p.menu{
 	padding-top: 5px;
 	width: 58px;
 	text-align: center;
 	flex: 1;
+	font-size: 12px;
+
+	vertical-align: middle;
+	color: rgb(112, 119, 134);
+}
+a.menu{
+	color: rgb(112, 119, 134);
+	vertical-align: middle;
+}
+div.menu{
+	padding-top: 5px;
+	width: 58px;
+	text-align: center;
+	
 	font-size: 12px;
 }
 p.selected{
